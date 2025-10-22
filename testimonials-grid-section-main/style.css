@@ -106,7 +106,7 @@ article > .content > p{
 }
 
 
-@media all and (max-width:375px){
+@media all and (max-width:500px){
     main > section{
     width: 80%;
     display: block;
@@ -116,3 +116,4 @@ article > .content > p{
     margin-top: 2em;
     }
 }
+
