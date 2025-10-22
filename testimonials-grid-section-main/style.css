@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+main{
+    background-color :hsl(214, 17%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+main > section{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 16em 16em;
+    gap: 2em;
+}
+main>section>article{
+    border-radius: 0.5em;
+    padding: 2em;
+}
+#art1{
+    grid-column: span 2;
+    background-color:hsl(263, 55%, 52%) ;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x:90% ;
+}
+#art1{
+    grid-column: span 2;
+    background-color:hsl(263, 55%, 52%) ;
+}
+#art2{
+    background-color:hsl(217, 19%, 35%) ;
+}
+#art3{
+    grid-row: span 2;
+    background-color: white;
+    font-size: 1.em;
+}
+#art4{
+    background-color: white;
+}
+#art5{
+    grid-column: span 2;
+    background-color: hsl(219, 29%, 14%);
+}
+article > .profile{
+    display: flex;
+    gap: 2em;
+}
+
+article > .profile > div >img{
+    border-radius: 50%;
+    width: 2em;
+
+}
+article > .profile >div > h5{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+article > .profile >div > h6{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+article > .content{
+    margin-top: 1em;
+}
+article > .content > h3{
+    color: white;
+    font-weight: 600;
+}
+article > .content >p{
+    color:white;
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+#art3 > .content >h3,
+#art4 > .content >h3{
+  color:hsl(217, 19%, 35%) ;
+}
+#art3 > .content >p,
+#art4 > .content >p{
+    color:  hsl(217, 19%, 35%);
+}
+#art3 > .profile >div>h5,
+#art3 > .profile >div>h6{
+    color:  hsl(219, 29%, 14%);
+}
+#art4 > .profile >div>h5,
+#art4 > .profile >div>h6,
+#art5 > .profile >div>h5,
+#art5 > .profile >div>h6{
+    color: hsl(219, 29%, 14%) ;
+}
+
+@media all and (max-width:375px){
+    main > section{
+    width: 80%;
+    display: block;
+    }
+    main>section>article{
+    margin-top: 2em;
+}
+}
